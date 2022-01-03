@@ -6,6 +6,3 @@
  **/
 
 import queryString from 'querystring'
-
-console.log('queryString is ', queryString)
-// 无法直接使用node语法，拒接polyfills

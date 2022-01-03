@@ -7,9 +7,16 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/testChunk.js',
+  mode: 'production',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    chunkFilename: '[name].[contenthash]'
+  },
+  optimization: {
+    chunkIds: "deterministic",
+    moduleIds: "deterministic",
+    mangleExports: "deterministic"
   }
 }
