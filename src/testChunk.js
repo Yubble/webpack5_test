@@ -15,3 +15,7 @@ import('./branch2').then(data => {
 const objective = '测试chunk打包'
 
 console.log(objective)
+
+// import('lib_remote/list').then(list => {
+//   console.log('----- list is -----', list)
+// })
